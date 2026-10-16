@@ -1,0 +1,6 @@
+{
+  "name": "CognitiveOps - AI Systems & Software Studio",
+  "description": "Modern websites, intelligent CRMs, and predictive project management software engineered with senior craftsmanship and powered by AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
