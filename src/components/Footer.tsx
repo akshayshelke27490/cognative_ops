@@ -1,4 +1,5 @@
 import React from 'react';
+import { CognitiveOpsLogo } from './CognitiveOpsLogo';
 
 interface FooterProps {
   onOpenLegal: (type: 'soc2' | 'privacy' | 'terms') => void;
@@ -15,17 +16,15 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal, onOpenScreen }) => 
           
           {/* Brand & Mission Column */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <span className="text-xl font-bold text-[#dbfcff] tracking-tight">
-                CognitiveOps
-              </span>
-              <span className="px-1.5 py-0.5 rounded text-[10px] font-mono uppercase bg-[#272a32] text-[#00dbe9]">
-                Software Studio
+            <div className="flex items-center gap-3">
+              <CognitiveOpsLogo size="md" />
+              <span className="px-1.5 py-0.5 rounded text-[10px] font-mono uppercase bg-[#272a32] text-[#00dbe9] border border-[#00dbe9]/20">
+                Modular Solutions
               </span>
             </div>
 
             <p className="text-sm text-[#b9cacb] max-w-sm leading-relaxed">
-              We build modern websites, intelligent CRMs, and predictive project management tools powered by AI for forward-thinking businesses.
+              We engineer modern web platforms, intelligent business systems, and scalable custom software powered by AI for forward-thinking enterprises.
             </p>
 
             <div className="pt-2">

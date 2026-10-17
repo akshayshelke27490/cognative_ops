@@ -16,14 +16,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
       <div className="text-center max-w-3xl mx-auto mb-14">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#272a32] border border-[#3b494b]/40 mb-3">
           <span className="font-mono text-xs text-[#dbfcff] uppercase tracking-wider font-semibold">
-            What We Do
+            Capabilities &amp; Solutions
           </span>
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#e1e2ec] tracking-tight mb-3">
-          Our Core Services
+          Our Services &amp; Custom Solutions
         </h2>
         <p className="text-sm sm:text-base text-[#b9cacb] leading-relaxed">
-          End-to-end custom digital platforms, intelligent customer workflows, and operational tools designed for scale.
+          From scalable web platforms and intelligent CRM engines to autonomous AI agents, operational tools, and bespoke enterprise software.
         </p>
       </div>
 
@@ -201,6 +201,42 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
           </div>
         </div>
 
+      </div>
+
+      {/* Custom & Specialized Solutions Banner */}
+      <div className="mt-8 p-6 md:p-8 rounded-xl bg-gradient-to-r from-[#1d1f27] via-[#272a32]/90 to-[#1d1f27] border border-[#272a32] relative overflow-hidden shadow-lg">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="space-y-3 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-[#32353d] text-[#00f0ff] font-mono text-[11px] uppercase tracking-wider">
+              <span className="material-symbols-outlined text-sm">hub</span>
+              <span>Bespoke &amp; Adaptive Solutions</span>
+            </div>
+            <h3 className="text-xl sm:text-2xl font-bold text-[#e1e2ec] tracking-tight">
+              Need a Custom or Specialized Software Solution?
+            </h3>
+            <p className="text-sm text-[#b9cacb] leading-relaxed">
+              We are not limited to fixed software categories. Whether you need autonomous AI agents, automated workflow micro-services, internal operations dashboards, or proprietary data pipelines, we architect tailored software engineered for your specific stack.
+            </p>
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              {['Autonomous AI Agents', 'Internal Ops Portals', 'Custom API & ETL Engines', 'Legacy Modernization', 'Multi-Tenant SaaS'].map((tag) => (
+                <span key={tag} className="px-2 py-0.5 rounded text-[11px] font-mono bg-[#191b23] text-[#dbfcff] border border-[#272a32]">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3">
+            <a
+              href="#contact"
+              onClick={() => onSelectServiceForContact('Custom AI & Enterprise Software')}
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#00f0ff] text-[#006970] text-sm font-semibold hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:bg-[#7df4ff] transition-all cursor-pointer whitespace-nowrap"
+            >
+              <span>Scope a Custom Solution</span>
+              <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

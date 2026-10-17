@@ -26,16 +26,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Hero Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold max-w-5xl text-[#e1e2ec] tracking-tight leading-[1.15] mb-5">
-          We Build Modern Websites, Intelligent CRMs &amp;{' '}
+          We Build Modern Websites, Intelligent Systems &amp;{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#dbfcff] via-[#00dbe9] to-[#e1e0ff]">
-            Project Management Software
+            Custom Software Solutions
           </span>{' '}
           Powered by AI
         </h1>
 
         {/* Subtitle */}
         <p className="text-base sm:text-lg text-[#b9cacb] max-w-2xl mb-8 leading-relaxed font-normal">
-          Transform your business operations with tailor-made web platforms, automated customer workflows, and smart sprint delivery—engineered for growth and future-proofed for modern AI.
+          Transform your business operations with tailor-made digital platforms, automated workflows, and scalable custom software—engineered for growth and future-proofed for modern AI.
         </p>
 
         {/* Buttons */}

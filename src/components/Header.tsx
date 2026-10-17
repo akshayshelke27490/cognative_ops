@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CognitiveOpsLogo } from './CognitiveOpsLogo';
 
 interface HeaderProps {
   onScheduleCall: () => void;
@@ -15,16 +16,9 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleCall, onOpenLiveScreen
         {/* Brand Lockup */}
         <div className="flex items-center gap-6 shrink-0">
           <a href="#" className="flex items-center gap-2 group">
-            <img
-              alt="CognitiveOps Neural Logo"
-              className="h-8 w-auto object-contain transition-transform group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida/AEtjO1Uf-s8R_SB-cKMy9pBLSKMU_8cO0O_0lt9c_1yZNs37c_9H8fk4yFvClMNjJjC-WWL4tVk2duKA5yQHctQSMIJq5XZBe6QM5aQKhTcPeYIu2tXEFxAvp9M0zT8TugeQg3jl84I4uN-DrreewzRfuk8H1LcnzRSTeSQuljZNsp2XClWVSruNOoyRLvrjFiS61v3CTQT6PG2dZ9ZBA4ceGy1yaHtSwGHhLizXwnuoldx-WUJlKMPpyNys7hM"
-            />
-            <span className="text-lg font-semibold text-[#dbfcff] tracking-tight">
-              CognitiveOps
-            </span>
-            <span className="px-1.5 py-0.5 rounded text-[10px] font-mono uppercase bg-[#272a32] text-[#00dbe9] tracking-wider">
-              AI Systems
+            <CognitiveOpsLogo size="md" />
+            <span className="px-1.5 py-0.5 rounded text-[10px] font-mono uppercase bg-[#272a32] text-[#00dbe9] tracking-wider border border-[#00dbe9]/20">
+              Modular Solutions
             </span>
           </a>
 
